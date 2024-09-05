@@ -1,0 +1,163 @@
+#home{
+    height: 900px;
+}
+#aboutme{
+    height:900px;
+}
+#education{
+    height: 900px;
+
+}
+#skills{
+    height:900px;
+}
+#contact{
+    height:900px;
+}
+html{
+    background-color:#317F8C;
+    scroll-behavior: smooth;
+     overflow-x:hidden ;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav{
+    position: fixed;
+    top: 10px;
+    right: 40px;
+    font-size: 30px;
+    padding: 2px;
+    z-index: 5;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover{
+    color: black;
+    text-decoration: none;
+}
+.container{
+     height:50vh;
+    width:90vw;
+}
+#home{
+    position: relative;
+}
+.mypic{
+   position: relative;
+   top: 20%;
+   left: 20%;
+
+}
+.keerthi{
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    font-size: 50px;
+    color: whitesmoke;
+}
+.soft{
+    position: absolute;
+    top: 500px;
+    left: 53%;
+    font-size: 40px;
+    margin: 0px;
+}
+.container1{
+    position: relative;
+}
+.mypic2{
+    position: absolute;
+    top: 200px;
+    right:40px;
+    border-radius: 20px;
+}
+.aboutme{
+    position: absolute;
+    top: 350px;
+    font-size: 30px;
+    left:10%;
+    color:white;
+ 
+}
+.who{
+    position: absolute;
+    top:270px;
+    left: 10%;
+    font-size: 50px;
+}
+.container2{
+    position: relative;
+}
+.education{
+    position: absolute;
+    
+} 
+.class10{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.class10 ul li{
+    list-style-type: none;
+}
+.class12{
+    position: absolute;
+    top: 290px;
+    left: 900px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.class12 ul li{
+    list-style-type: none;
+}
+.skills{
+   display: flex;
+   justify-content: space-evenly;
+   position: relative;
+   top:40%;
+   left:5%;
+}
+.aptitude{
+    position: absolute;
+    top:110%;
+    left:15%;
+    color:white;
+}
+.communication{
+    position: absolute;
+    top:110%;
+    left:45%;
+    color: white;
+}
+.leadership{
+    position: absolute;
+    top:110%;
+    left:78%;
+    color:white
+}
+.contact{
+    position:relative ;
+    top: 250px;
+    margin-left: 240px;
+}
+h3{
+    position: relative;
+    left: 110px;
+    bottom: 75px;
+}
