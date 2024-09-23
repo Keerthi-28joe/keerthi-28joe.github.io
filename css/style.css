@@ -257,38 +257,15 @@ ul li {
     margin-top: 10px;
 
 }
-
 /* Footer */
-.last {
+.last{
+    position: relative;
+    top:90px;
+    padding:40px;
     background-color: aliceblue;
-    height: 150px;
-    border-radius: 10px;
-    position: sticky;
-
 }
-
-.last ul {
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-
-
-}
-
-.last li a {
-    display: flex;
-    text-decoration: none;
-    padding: 20px;
-    font-size: 30px;
-    list-style-type: none;
-    color: black;
-
-}
-
-.last p {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-    font-size: 30px;
-    color: red;
+.last p{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
 }
