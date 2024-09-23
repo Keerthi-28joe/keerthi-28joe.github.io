@@ -1,163 +1,294 @@
-#home{
-    height: 900px;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
-#aboutme{
-    height:900px;
-}
-#education{
-    height: 900px;
 
+html {
+    background-color: #317F8C;
 }
-#skills{
-    height:900px;
+
+body {
+    overflow-x: hidden;
 }
-#contact{
-    height:900px;
-}
-html{
-    background-color:#317F8C;
-    scroll-behavior: smooth;
-     overflow-x:hidden ;
-}
-header{
-    display: flex;
-    flex-wrap: wrap;
-}
-nav{
+
+nav {
     position: fixed;
-    top: 10px;
-    right: 40px;
-    font-size: 30px;
-    padding: 2px;
+    top: 3%;
+    right: 2%;
     z-index: 5;
 }
-nav ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+
+nav ul {
     display: flex;
+    list-style-type: none;
 }
-nav ul li{
-    display: inline;
-}
-nav ul li a{
+
+nav ul li a {
+    text-decoration: none;
     color: white;
-    text-decoration: none;
-    padding: 15px;
+    padding: 1rem;
+    font-size: 1.8rem;
 }
-nav a:hover{
+
+nav a:hover {
     color: black;
-    text-decoration: none;
 }
-.container{
-     height:50vh;
-    width:90vw;
+/* 
+.box {
+    height: 90px;
+    width: 2000px;
+    top: -10px;
+    position: fixed;
+    z-index: 1;
+    background-color: #317F8C;
+} */
+
+/* Home page */
+#home {
+    display: flex;
+    height: 100vh;
+    width: 96vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-#home{
-    position: relative;
-}
-.mypic{
-   position: relative;
-   top: 20%;
-   left: 20%;
+
+h1 {
+    display: flex;
 
 }
-.keerthi{
-    position: absolute;
-    left: 50%;
-    top: 44%;
+
+.mypic {
+    margin-right: 10%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    height: fit-content;
+    padding: 2px;
+}
+
+.keerthi {
+    display: flex;
+    flex-direction: column;
     font-size: 50px;
-    color: whitesmoke;
+    margin-left: 2%;
+    gap: 20px;
 }
-.soft{
+
+.button1 {
     position: absolute;
-    top: 500px;
-    left: 53%;
-    font-size: 40px;
-    margin: 0px;
+    text-decoration: none;
+    top: 520px;
+    left: 890px;
+    font-size: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+    box-shadow: 5px 5px 5px
 }
-.container1{
-    position: relative;
+
+/* About me  */
+#aboutme {
+    display: flex;
+    height: 900px;
 }
-.mypic2{
-    position: absolute;
-    top: 200px;
-    right:40px;
+
+.about {
+    margin-top: 25%;
+    margin-left: 10%;
+    font-size: 1.8rem;
+}
+
+.mypic2 {
+    margin-left: 100px;
+    margin-top: 15%;
     border-radius: 20px;
+    opacity: 0.1;
+    background-color: aliceblue;
+    height: fit-content;
+    padding: 2px;
+    box-shadow: 8px 8px 8px;
+
 }
-.aboutme{
-    position: absolute;
-    top: 350px;
-    font-size: 30px;
-    left:10%;
-    color:white;
- 
+
+.mypic2:hover {
+    opacity: 1;
+    transition: 0.9s;
 }
-.who{
-    position: absolute;
-    top:270px;
-    left: 10%;
-    font-size: 50px;
+
+/* Education */
+#education {
+    display: flex;
+    height: 900px;
+    flex-wrap: wrap;
 }
-.container2{
-    position: relative;
-}
-.education{
-    position: absolute;
-    
-} 
-.class10{
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    font-size: 30px;
-    color: whitesmoke;
-}
-.class10 ul li{
+
+ul li {
     list-style-type: none;
 }
-.class12{
-    position: absolute;
-    top: 290px;
-    left: 900px;
+
+.class10 {
+    margin-top: 25%;
+    margin-left: 20%;
+    font-size: 2rem;
+    color: black;
+    line-height: 180%;
+    background-color: whitesmoke;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+.class12 {
+    margin-top: 25%;
+    margin-left: 20%;
+    font-size: 2rem;
+    color: black;
+    line-height: 180%;
+    background-color: whitesmoke;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+/* skills */
+
+#skills {
+    height: 900px;
+}
+
+.skillspage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.maths {
+    border-radius: 10px;
+}
+
+.com {
+    border-radius: 10px;
+
+}
+
+.lead {
+    border-radius: 10px;
+}
+
+.math {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
+.math:hover {
+    padding: 20px;
+}
+
+.communication {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+
+}
+
+.communication:hover {
+    padding: 20px;
+
+}
+
+.leader {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+}
+
+.leader:hover {
+    padding: 20px;
+
+}
+
+
+/* Contact */
+#contact {
+
+    height: 800px;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 15%;
+
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+    gap: 125px;
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+/* Footer */
+.last {
+    background-color: aliceblue;
+    height: 150px;
+    border-radius: 10px;
+    position: sticky;
+
+}
+
+.last ul {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+
+
+}
+
+.last li a {
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
     font-size: 30px;
-    color: whitesmoke;
-}
-.class12 ul li{
     list-style-type: none;
+    color: black;
+
 }
-.skills{
-   display: flex;
-   justify-content: space-evenly;
-   position: relative;
-   top:40%;
-   left:5%;
-}
-.aptitude{
-    position: absolute;
-    top:110%;
-    left:15%;
-    color:white;
-}
-.communication{
-    position: absolute;
-    top:110%;
-    left:45%;
-    color: white;
-}
-.leadership{
-    position: absolute;
-    top:110%;
-    left:78%;
-    color:white
-}
-.contact{
-    position:relative ;
-    top: 250px;
-    margin-left: 240px;
-}
-h3{
-    position: relative;
-    left: 110px;
-    bottom: 75px;
+
+.last p {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
 }
