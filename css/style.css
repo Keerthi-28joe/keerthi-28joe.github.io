@@ -34,15 +34,15 @@ nav ul li a {
 nav a:hover {
     color: black;
 }
-/* 
+
 .box {
     height: 90px;
-    width: 2000px;
-    top: -10px;
+    width: 120%;
     position: fixed;
     z-index: 1;
     background-color: #317F8C;
-} */
+
+}
 
 /* Home page */
 #home {
@@ -52,11 +52,6 @@ nav a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    display: flex;
-
 }
 
 .mypic {
@@ -95,13 +90,18 @@ h1 {
 }
 
 .about {
-    margin-top: 25%;
-    margin-left: 10%;
+    margin-top: 15%;
+    margin-left: 5%;
     font-size: 1.8rem;
 }
 
+.about p {
+    color: white;
+    padding: 20px;
+}
+
 .mypic2 {
-    margin-left: 100px;
+    margin-right: 25px;
     margin-top: 15%;
     border-radius: 20px;
     opacity: 0.1;
@@ -130,7 +130,7 @@ ul li {
 
 .class10 {
     margin-top: 25%;
-    margin-left: 20%;
+    margin-left: 15%;
     font-size: 2rem;
     color: black;
     line-height: 180%;
@@ -143,7 +143,7 @@ ul li {
 
 .class12 {
     margin-top: 25%;
-    margin-left: 20%;
+    margin-left: 15%;
     font-size: 2rem;
     color: black;
     line-height: 180%;
@@ -154,32 +154,34 @@ ul li {
     box-shadow: 5px 5px 5px;
 }
 
-/* skills */
+/* My works */
 
-#skills {
+#myWorks {
     height: 900px;
 }
 
-.skillspage {
+.workpage {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
-.maths {
+.html {
     border-radius: 10px;
 }
 
-.com {
+.css {
     border-radius: 10px;
 
 }
 
-.lead {
+.js {
     border-radius: 10px;
 }
 
-.math {
+/* html  */
+.html {
     margin-top: 20%;
     text-align: center;
     font-size: 2rem;
@@ -190,28 +192,49 @@ ul li {
     box-shadow: 5px 5px 5px;
 }
 
-.math:hover {
+.html a {
+    color: black;
+    font-style: italic;
+}
+
+.html a:hover {
+    color: blue;
+}
+
+.Html:hover {
+    padding: 10px;
+}
+
+/* css */
+
+.css {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+
+}
+
+.css a {
+    color: black;
+    font-style: italic;
+}
+
+.css a:hover {
+    color: blue;
+}
+
+.Css:hover {
     padding: 20px;
-}
-
-.communication {
-    margin-top: 20%;
-    text-align: center;
-    font-size: 2rem;
-    transition: all 0.5s;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px;
 
 }
 
-.communication:hover {
-    padding: 20px;
-
-}
-
-.leader {
+/* js */
+.js {
     margin-top: 20%;
     text-align: center;
     font-size: 2rem;
@@ -222,50 +245,77 @@ ul li {
     box-shadow: 5px 5px 5px;
 }
 
-.leader:hover {
+.js a {
+
+    color: black;
+    font-style: italic;
+}
+
+.js a:hover {
+    color: blue;
+}
+
+.Js:hover {
     padding: 20px;
 
 }
 
 
 /* Contact */
-#contact {
-
-    height: 800px;
-}
-
-.call {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    margin-top: 15%;
-
-}
-
-.mobile {
-    display: flex;
-    flex-direction: column;
-    margin-top: 17%;
-    gap: 125px;
-    margin-left: 2%;
-    font-size: 1.5rem;
-}
-
-.contact {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-
-}
-/* Footer */
-.last{
-    position: relative;
-    top:90px;
-    padding:40px;
-    background-color: aliceblue;
-}
-.last p{
+/* Contact Section Styling */
+.contact-section {
+    padding: 120px;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 2rem;
-    font-style: italic;
+}
+
+/* Form Title */
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: black;
+}
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Input and Textarea Styling */
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Submit Button Styling */
+.submit-button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
 }
