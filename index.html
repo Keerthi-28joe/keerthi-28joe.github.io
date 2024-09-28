@@ -7,6 +7,11 @@
     <meta name="Description" content="portfolio">
     <title>Keerthi Portfolio</title>
     <link rel="stylesheet" href="./css/style.css ">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+    <script src="../../assets/vendor/aos/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -26,10 +31,10 @@
     <main>
         <!-- Home -->
         <section id="home" class="container">
-            <img src="./assets/images/image1.jpg" alt="keerthi pic" height="600" class="mypic" width="300">
+            <img src="./assets/images/home-image.jpg" alt="keerthi pic" height="600" class="mypic" width="300">
             <div class="keerthi">
                 <p style="color: white;">Hey, I'm Keerthika</p>
-                <p style="font-size: 30px;">Software Developer</p>
+                <p style="font-size: 30px;"data-aos="fade-up">Software Developer</p>
                 <a href="mailto:keerthika.ravikumar@fssa.freshworks.com" class="button1">Hire Me</a>
             </div>
         </section>
@@ -49,14 +54,15 @@
                     <p>Alongside technical skills, I am also improving my Life Skills and English language proficiency.
                     </p>
                 </div>
-                <img src="./assets/images/image2.jpg" alt="mypic" height="500" class="mypic2" width="250">
+                <img src="./assets/images/about-image.jpg" alt="mypic" height="500" class="mypic2" width="250">
 
             </section>
         </div>
 
         <!-- Education -->
+        <h1 class="heading" data-aos="fade-left">Academic Background</h1>
         <section id="education" class="container2">
-            <div class="class10">
+            <div class="class10" data-aos="zoom-in-right">
                 <h1>Class X</h1>
                 <ul>
                     <li> Board:Tamil Nadu State Board</li>
@@ -65,7 +71,7 @@
                     <li>Year of passing: 2020</li>
                 </ul>
             </div>
-            <div class="class12">
+            <div class="class12" data-aos="zoom-in-right">
                 <h1>Class X11</h1>
                 <ul>
                     <li> Board: Tamil Nadu State Board</li>
@@ -77,23 +83,23 @@
         </section>
         <!-- my works -->
         <section id="myWorks" class="container3">
-            <div class="workpage">
+            <div class="workpage" data-aos="zoom-in">
                 <!-- html -->
                 <div class="html">
-                    <img class="Html" src="./assets/images/image3.jpg" height="240" alt="html"/>
-                    <a href="./assets/images/image9.png">HTML</a>
+                    <img class="Html" src="./assets/images/myWorks-image1.jpg" height="240" alt="html" />
+                    <a href="./assets/images/myWorks-html.png">HTML</a>
                 </div>
 
                 <!-- CSS -->
-                <div class="css">
-                    <img class="Css" src="./assets/images/image4.avif" height="240px" width="350px" alt="css"/>
-                    <a href="./assets/images/image10.png">CSS</a>
+                <div class="css" data-aos="zoom-in">
+                    <img class="Css" src="./assets/images/myWorks-image2.avif" height="240px" width="350px" alt="css" />
+                    <a href="./assets/images/myWorks-css.png">CSS</a>
                 </div>
 
                 <!-- JS -->
-                <div class="js">
-                    <img class="Js" src="./assets/images/image5.webp" height="240px" width="320px"
-                            alt="JavaScript"/>
+                <div class="js" data-aos="zoom-in">
+                    <img class="Js" src="./assets/images/myWorks-image3.webp" height="240px" width="320px"
+                        alt="JavaScript" />
                     <a href="https://github.com/Keerthi-28joe/javascript-practice">JavaScript</a>
                 </div>
             </div>
@@ -123,4 +129,15 @@
             </form>
         </section>
 </body>
+<script>
+    AOS.init();
+    $(document).on('ready', function () {
+    AOS.init({
+      duration: 650,
+      once: true
+    });
+  });
+</script>
+</script>
+
 </html>
