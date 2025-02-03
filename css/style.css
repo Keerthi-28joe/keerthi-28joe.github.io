@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+Reset and Base Styles
 * {
     margin: 0;
     padding: 0;
@@ -72,14 +72,13 @@ body {
     background: linear-gradient(45deg, #2563eb, #7c3aed);
     color: white;
 }
-
 /* Hero Section */
 .hero-section {
-    padding: 8rem 5% 5rem;
+    padding: 2rem 5% 4rem; /* Reduced top padding from 4rem to 2rem */
     display: flex;
     align-items: center;
     gap: 4rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px); /* Adjust height based on nav height if fixed */
     background: linear-gradient(135deg, #fff 0%, #f0f2f5 100%);
 }
 
